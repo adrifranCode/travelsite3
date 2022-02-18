@@ -303,6 +303,10 @@ summary {
 Removes the default spacing and border for appropriate elements.
 */
 
+h2 {
+  color: #f02ff5;
+}
+
 blockquote,
 dl,
 dd,
@@ -334,6 +338,13 @@ menu {
   list-style: none;
   margin: 0;
   padding: 0;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 }
 
 /*
@@ -396,6 +407,10 @@ Make sure disabled buttons don't get the pointer cursor.
    This can trigger a poorly considered lint error in some tools but is included by design.
 */
 
+button {
+  color: #f59307;
+}
+
 img,
 svg,
 video,
@@ -449,7 +464,7 @@ button:focus {
   --tw-gradient-from: #fff;
   --tw-gradient-stops: var(--tw-gradient-from),
     var(--tw-gradient-to, rgb(255 255 255 / 0));
-  --tw-gradient-to: #3b82f6;
+  --tw-gradient-to: #662587;
   -webkit-background-clip: text;
   background-clip: text;
   font-size: 1.875rem;
@@ -457,6 +472,7 @@ button:focus {
   font-weight: 900;
   text-transform: uppercase;
   color: transparent;
+  filter: drop-shadow(2px 4px 6px black);
 }
 
 @media (min-width: 640px) {
@@ -530,25 +546,7 @@ button:focus {
   width: 100%;
 }
 
-@media (min-width: 640px) {
-  .container {
-    max-width: 640px;
-  }
-}
-
-@media (min-width: 768px) {
-  .container {
-    max-width: 768px;
-  }
-}
-
-@media (min-width: 1024px) {
-  .container {
-    max-width: 1024px;
-  }
-}
-
-@media (min-width: 1280px) {
+/* @media (min-width: 1280px) {
   .container {
     max-width: 1280px;
   }
@@ -558,7 +556,7 @@ button:focus {
   .container {
     max-width: 1536px;
   }
-}
+} */
 
 .visible {
   visibility: visible;
@@ -1147,7 +1145,7 @@ button:focus {
 
 .bg-slate-100 {
   --tw-bg-opacity: 1;
-  background-color: rgb(241 245 249 / var(--tw-bg-opacity));
+  /* background-color: rgb(241 245 249 / var(--tw-bg-opacity)); */
 }
 
 .bg-black {
@@ -1219,33 +1217,33 @@ button:focus {
 }
 
 .from-blue-500 {
-  --tw-gradient-from: #3b82f6;
+  --tw-gradient-from: #662587;
   --tw-gradient-stops: var(--tw-gradient-from),
     var(--tw-gradient-to, rgb(59 130 246 / 0));
 }
 
 .from-red-600 {
-  --tw-gradient-from: #dc2626;
+  --tw-gradient-from: #f59307;
   --tw-gradient-stops: var(--tw-gradient-from),
     var(--tw-gradient-to, rgb(220 38 38 / 0));
 }
 
 .from-blue-400 {
-  --tw-gradient-from: #60a5fa;
+  --tw-gradient-from: #f59307;
   --tw-gradient-stops: var(--tw-gradient-from),
     var(--tw-gradient-to, rgb(96 165 250 / 0));
 }
 
 .to-blue-600 {
-  --tw-gradient-to: #2563eb;
+  --tw-gradient-to: #f59307;
 }
 
 .to-indigo-600 {
-  --tw-gradient-to: #4f46e5;
+  --tw-gradient-to: #662587;
 }
 
 .to-blue-700 {
-  --tw-gradient-to: #1d4ed8;
+  --tw-gradient-to: #662587;
 }
 
 .bg-clip-text {
@@ -1419,6 +1417,7 @@ button:focus {
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
+  color: #f2c322;
 }
 
 .text-2xl {
@@ -1510,12 +1509,12 @@ button:focus {
 
 .text-gray-800 {
   --tw-text-opacity: 1;
-  color: rgb(31 41 55 / var(--tw-text-opacity));
+  color: #f59307;
 }
 
 .text-gray-400 {
   --tw-text-opacity: 1;
-  color: rgb(156 163 175 / var(--tw-text-opacity));
+  color: #f59307;
 }
 
 .text-transparent {
@@ -1799,8 +1798,18 @@ button:focus {
   filter: drop-shadow(2px 4px 6px black);
 }
 
+.add-more-shadows {
+  filter: drop-shadow(2px 4px 66px black);
+}
+
+.add-text-shadows {
+  filter: drop-shadow(2px 2px 2px black);
+  /* text-shadow: 2px 2px 7px black; */
+}
+
 #logoFont {
   font-family: "Dancing Script", cursive;
+  color: #f59307;
 }
 
 #home {
@@ -1816,6 +1825,19 @@ button:focus {
   filter: drop-shadow(3px 1px 4px black);
 }
 
+#footer {
+  background-color: #662587;
+}
+
+.gold {
+  color: #f59307;
+}
+
+#logo-resize {
+  margin-right: -30px;
+  width: 150px;
+  height: 50px;
+}
 @media (max-width: 390px) {
   .swiper-slide img {
     height: 15rem;
@@ -1824,6 +1846,10 @@ button:focus {
   #container-shrink {
     height: 45%;
     margin-top: 40px;
+  }
+
+  .text-3xl {
+    font-size: 1.75rem;
   }
 
   #arrow-disappear {
