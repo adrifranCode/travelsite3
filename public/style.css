@@ -347,6 +347,15 @@ menu {
   width: 50%;
 }
 
+.marginless {
+  margin-top: -40px;
+}
+
+#word-centered {
+  text-align: center;
+  justify-content: center;
+}
+
 /*
 Prevent resizing textareas horizontally by default.
 */
