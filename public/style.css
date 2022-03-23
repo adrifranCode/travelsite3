@@ -1826,7 +1826,7 @@ button:focus {
 }
 
 #popular {
-  filter: drop-shadow(2px 4px 56px black);
+  filter: drop-shadow(2px 2px 3px black);
   padding-top: 20px;
 }
 
