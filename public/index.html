@@ -12,6 +12,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
@@ -191,7 +192,7 @@
                 </div>
                 <button
                     class="add-shadows group text-white flex py-2 px-4 self-start bg-gradient-to-br from-blue-500 to-blue-600 rounded-lg mt-2 hover:bg-white hover:text-blue-500 transition-all duration-500">
-                    <h1 class="pr-2 add-text-shadows">Explore</h1>
+                    <h1 class="pr-2 add-text-shadows">Book Now</h1>
                     <svg xmlns="http://www.w3.org/2000/svg"
                         class="h-6 w-0 sm:group-hover:w-6 transition-all duration-500" fill="none" viewBox="0 0 24 24"
                         stroke="currentColor">
@@ -206,7 +207,7 @@
                 <div x-ref="swiper" class="swiper w-full h-[450px]">
                     <div class="swiper-wrapper custom inset-y-0 add-shadows" id="container-shrink">
                         <!-- Card 1 -->
-                        <div class="swiper-slide relative w-64 h-[400px] rounded-md">
+                        <div class="animate__animated animate__fadeInUp animate__slow swiper-slide relative w-64 h-[400px] rounded-md">
                             <h1 x-text="data[0].title" class="text-xl font-medium pl-2"></h1>
                             <div class="flex justify-start items-center space-x-2 py-1">
                                 <template x-for="i in 5" :key="i">
@@ -215,10 +216,10 @@
                                 </template>
                             </div>
                             <img :src="data[0].image"
-                                class="relative w-64 rounded-md shadow-lg object-cover object-center" alt="">
+                                class="animate__animated animate__fadeInUp animate__slow relative w-64 rounded-md shadow-lg object-cover object-center" alt="">
                         </div>
                         <!-- Card 2 -->
-                        <div class="swiper-slide relative w-64 h-[400px] rounded-md">
+                        <div class="animate__animated animate__fadeInUp animate__slow swiper-slide relative w-64 h-[400px] rounded-md">
                             <h1 x-text="data[1].title" class="text-xl font-medium pl-2"></h1>
                             <div class="flex justify-start items-center space-x-2 py-1">
                                 <template x-for="i in 5" :key="i">
@@ -227,10 +228,10 @@
                                 </template>
                             </div>
                             <img :src="data[1].image"
-                                class="relative w-64 rounded-md shadow-lg object-cover object-center" alt="">
+                                class="animate__animated animate__fadeInUp animate__slow relative w-64 rounded-md shadow-lg object-cover object-center" alt="">
                         </div>
                         <!-- Card 3 -->
-                        <div class="swiper-slide relative w-64 h-[400px] rounded-md">
+                        <div class="animate__animated animate__fadeInUp animate__slow swiper-slide relative w-64 h-[400px] rounded-md">
                             <h1 x-text="data[2].title" class="text-xl font-medium pl-2"></h1>
                             <div class="flex justify-start items-center space-x-2 py-1">
                                 <template x-for="i in 5" :key="i">
@@ -239,7 +240,7 @@
                                 </template>
                             </div>
                             <img :src="data[2].image"
-                                class="relative w-64 rounded-md shadow-lg object-cover object-center" alt="">
+                                class="animate__animated animate__fadeInUp animate__slow relative w-64 rounded-md shadow-lg object-cover object-center" alt="">
                         </div>
                         <!-- Card 4 -->
                         <div class="swiper-slide relative w-64 h-[400px] rounded-md">
@@ -331,19 +332,19 @@
         <div id="popular" class="col-span-full sm:col-span-3 w-full h-96 sm:h-full relative overflow-hidden pb-4">
             <div class="absolute top-0 left-0 sm:relative w-full h-full grid grid-rows-6 grid-cols-3 gap-2">
                 <div class="w-full h-auto rounded-lg row-span-2 relative overflow-hidden">
-                    <img src="./assets/kerala.jpg" class="w-full h-full object-center object-cover" alt="">
+                    <img src="./assets/couple1.jpg" class="w-full h-full object-center object-cover" alt="">
                 </div>
                 <div class="w-full h-auto rounded-lg row-span-3 relative overflow-hidden">
-                    <img src="./assets/Bali.jpg" class="w-full h-full object-center object-cover" alt="">
+                    <img src="./assets/japan1.jpg" class="w-full h-full object-center object-cover" alt="">
                 </div>
                 <div class="w-full h-auto rounded-lg row-span-1 col-span-1 relative overflow-hidden shadow-xl">
-                    <img src="./assets/bali_2.jpg" class="w-full h-full object-center object-cover" alt="">
+                    <img src="./assets/europe3.jpg" class="w-full h-full object-center object-cover" alt="">
                 </div>
                 <div class="w-full h-auto rounded-lg row-span-2 relative overflow-hidden">
-                    <img src="./assets/indonesia_2.jpg" class="w-full h-full object-center object-cover" alt="">
+                    <img src="./assets/couple2.jpg" class="w-full h-full object-center object-cover" alt="">
                 </div>
                 <div class="w-full h-auto rounded-lg row-span-1 relative overflow-hidden shadow-xl">
-                    <img src="./assets/paris_2.jpg" class="w-full h-full object-center object-cover" alt="">
+                    <img src="./assets/family1.jpg" class="w-full h-full object-center object-cover" alt="">
                 </div>
                 <div
                     class="w-full h-auto rounded-lg row-span-1 col-span-2 relative overflow-hidden flex justify-center items-center ">
@@ -352,13 +353,13 @@
                         Popular destinations</h2>
                 </div>
                 <div class="w-full h-auto rounded-lg row-span-3 relative overflow-hidden">
-                    <img src="./assets/thailand.jpg" class="w-full h-full object-center object-cover" alt="">
+                    <img src="./assets/friends1.jpg" class="w-full h-full object-center object-cover" alt="">
                 </div>
                 <div class="w-full h-auto rounded-lg row-span-3 relative overflow-hidden">
-                    <img src="./assets/kerala_2.jpg" class="w-full h-full object-center object-cover" alt="">
+                    <img src="./assets/couple3.jpg" class="w-full h-full object-center object-cover" alt="">
                 </div>
                 <div class="w-full h-auto rounded-lg row-span-2 relative overflow-hidden">
-                    <img src="./assets/paris.jpg" class="w-full h-full object-center object-cover" alt="">
+                    <img src="./assets/disney1.jpg" class="w-full h-full object-center object-cover" alt="">
                 </div>
             </div>
         </div>

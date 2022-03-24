@@ -354,6 +354,7 @@ menu {
 #word-centered {
   text-align: center;
   justify-content: center;
+  filter: drop-shadow(1px 1px 18px grey);
 }
 
 /*
