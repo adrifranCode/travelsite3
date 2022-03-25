@@ -29,7 +29,7 @@
             <!-- <h1 class="text-xl font-medium">Contact US</h1> -->
         </div>
         <div class="w-full h-screen bg-opacity-60 absolute top-0 left-0 z-10"></div>
-        <img :src="data[cIndex].bg" class="w-full h-screen absolute top-0 left-0 z-0 object-cover object-center" alt="">
+        <img loading="lazy" :src="data[cIndex].bg" class="w-full h-screen absolute top-0 left-0 z-0 object-cover object-center" alt="" style="width:100%">
         <nav x-data="nav" id="nav-bg" class="w-full top-0 absolute z-20 transition-opacity duration-500"
             x-bind:class="{'bg-black bg-opacity-30':navOpen}">
             <div class="max-w-7xl mx-auto flex justify-between px-4 relative">
@@ -207,7 +207,7 @@
                 <div x-ref="swiper" class="swiper w-full h-[450px]">
                     <div class="swiper-wrapper custom inset-y-0 add-shadows" id="container-shrink">
                         <!-- Card 1 -->
-                        <div class="animate__animated animate__fadeInUp animate__slow swiper-slide relative w-64 h-[400px] rounded-md">
+                        <div class="swiper-slide relative w-64 h-[400px] rounded-md">
                             <h1 x-text="data[0].title" class="text-xl font-medium pl-2"></h1>
                             <div class="flex justify-start items-center space-x-2 py-1">
                                 <template x-for="i in 5" :key="i">
@@ -215,11 +215,11 @@
                                         :class="'bg-gray-100'"></div>
                                 </template>
                             </div>
-                            <img :src="data[0].image"
-                                class="animate__animated animate__fadeInUp animate__slow relative w-64 rounded-md shadow-lg object-cover object-center" alt="">
+                            <img loading="lazy" :src="data[0].image"
+                                class="relative w-64 rounded-md shadow-lg object-cover object-center" alt="" style="width:100%">
                         </div>
                         <!-- Card 2 -->
-                        <div class="animate__animated animate__fadeInUp animate__slow swiper-slide relative w-64 h-[400px] rounded-md">
+                        <div class="swiper-slide relative w-64 h-[400px] rounded-md">
                             <h1 x-text="data[1].title" class="text-xl font-medium pl-2"></h1>
                             <div class="flex justify-start items-center space-x-2 py-1">
                                 <template x-for="i in 5" :key="i">
@@ -227,11 +227,11 @@
                                         :class="'bg-gray-100'"></div>
                                 </template>
                             </div>
-                            <img :src="data[1].image"
-                                class="animate__animated animate__fadeInUp animate__slow relative w-64 rounded-md shadow-lg object-cover object-center" alt="">
+                            <img loading="lazy" :src="data[1].image"
+                                class="relative w-64 rounded-md shadow-lg object-cover object-center" alt="" style="width:100%">
                         </div>
                         <!-- Card 3 -->
-                        <div class="animate__animated animate__fadeInUp animate__slow swiper-slide relative w-64 h-[400px] rounded-md">
+                        <div class="swiper-slide relative w-64 h-[400px] rounded-md">
                             <h1 x-text="data[2].title" class="text-xl font-medium pl-2"></h1>
                             <div class="flex justify-start items-center space-x-2 py-1">
                                 <template x-for="i in 5" :key="i">
@@ -239,8 +239,8 @@
                                         :class="'bg-gray-100'"></div>
                                 </template>
                             </div>
-                            <img :src="data[2].image"
-                                class="animate__animated animate__fadeInUp animate__slow relative w-64 rounded-md shadow-lg object-cover object-center" alt="">
+                            <img loading="lazy" :src="data[2].image"
+                                class="relative w-64 rounded-md shadow-lg object-cover object-center" alt="" style="width:100%">
                         </div>
                         <!-- Card 4 -->
                         <div class="swiper-slide relative w-64 h-[400px] rounded-md">
@@ -251,8 +251,8 @@
                                         :class="'bg-gray-100'"></div>
                                 </template>
                             </div>
-                            <img :src="data[3].image"
-                                class="relative w-64 rounded-md shadow-lg object-cover object-center" alt="">
+                            <img loading="lazy" :src="data[3].image"
+                                class="relative w-64 rounded-md shadow-lg object-cover object-center" alt="" style="width:100%">
                         </div>
                         <!-- Card 5 -->
                         <div class="swiper-slide relative w-64 h-[400px] rounded-md">
@@ -263,8 +263,8 @@
                                         :class="'bg-gray-100'"></div>
                                 </template>
                             </div>
-                            <img :src="data[4].image"
-                                class="relative w-64 rounded-md shadow-lg object-cover object-center" alt="">
+                            <img loading="lazy" :src="data[4].image"
+                                class="relative w-64 rounded-md shadow-lg object-cover object-center" alt="" style="width:100%">
                         </div>
                     </div>
                 </div>
@@ -290,7 +290,7 @@
 
     <!-- Offer -->
     <div class="max-w-7xl mx-auto w-full mt-10 px-2">
-        <img class="h-full leading-loose center marginless" src="assets/logo-removebg-preview.png" alt="Countdown to Bliss Logo">
+        <img loading="lazy" class="h-full leading-loose center marginless" src="assets/logo-removebg-preview.png" alt="Countdown to Bliss Logo">
         <div
             id="word-centered" class="relative bg-opacity-40 p-4 bg-gradient-to-r from-red-600 to-indigo-600 rounded-md px-2 h-full flex flex-col sm:flex-row justify-start items-start space-y-2 sm:space-y-0 sm:justify-between sm:items-center">
             <div class="pl-4">
@@ -332,19 +332,19 @@
         <div id="popular" class="col-span-full sm:col-span-3 w-full h-96 sm:h-full relative overflow-hidden pb-4">
             <div class="absolute top-0 left-0 sm:relative w-full h-full grid grid-rows-6 grid-cols-3 gap-2">
                 <div class="w-full h-auto rounded-lg row-span-2 relative overflow-hidden">
-                    <img src="./assets/couple1.jpg" class="w-full h-full object-center object-cover" alt="">
+                    <img loading="lazy" src="./assets/couple1.jpg" class="w-full h-full object-center object-cover" alt="" style="width:100%">
                 </div>
                 <div class="w-full h-auto rounded-lg row-span-3 relative overflow-hidden">
-                    <img src="./assets/japan1.jpg" class="w-full h-full object-center object-cover" alt="">
+                    <img loading="lazy" src="./assets/japan1.jpg" class="w-full h-full object-center object-cover" alt="" style="width:100%">
                 </div>
                 <div class="w-full h-auto rounded-lg row-span-1 col-span-1 relative overflow-hidden shadow-xl">
-                    <img src="./assets/europe3.jpg" class="w-full h-full object-center object-cover" alt="">
+                    <img loading="lazy" src="./assets/europe3.jpg" class="w-full h-full object-center object-cover" alt="" style="width:100%">
                 </div>
                 <div class="w-full h-auto rounded-lg row-span-2 relative overflow-hidden">
-                    <img src="./assets/couple2.jpg" class="w-full h-full object-center object-cover" alt="">
+                    <img loading="lazy" src="./assets/couple2.jpg" class="w-full h-full object-center object-cover" alt="" style="width:100%">
                 </div>
                 <div class="w-full h-auto rounded-lg row-span-1 relative overflow-hidden shadow-xl">
-                    <img src="./assets/family1.jpg" class="w-full h-full object-center object-cover" alt="">
+                    <img loading="lazy" src="./assets/family1.jpg" class="w-full h-full object-center object-cover" alt="" style="width:100%">
                 </div>
                 <div
                     class="w-full h-auto rounded-lg row-span-1 col-span-2 relative overflow-hidden flex justify-center items-center ">
@@ -353,13 +353,13 @@
                         Popular destinations</h2>
                 </div>
                 <div class="w-full h-auto rounded-lg row-span-3 relative overflow-hidden">
-                    <img src="./assets/friends1.jpg" class="w-full h-full object-center object-cover" alt="">
+                    <img loading="lazy" src="./assets/friends1.jpg" class="w-full h-full object-center object-cover" alt="" style="width:100%">
                 </div>
                 <div class="w-full h-auto rounded-lg row-span-3 relative overflow-hidden">
-                    <img src="./assets/couple3.jpg" class="w-full h-full object-center object-cover" alt="">
+                    <img loading="lazy" src="./assets/couple3.jpg" class="w-full h-full object-center object-cover" alt="" style="width:100%">
                 </div>
                 <div class="w-full h-auto rounded-lg row-span-2 relative overflow-hidden">
-                    <img src="./assets/themepark1.jpg" class="w-full h-full object-center object-cover" alt="">
+                    <img loading="lazy" src="./assets/themepark1.jpg" class="w-full h-full object-center object-cover" alt="" style="width:100%">
                 </div>
             </div>
         </div>
@@ -422,7 +422,7 @@
                                             src="https://player.vimeo.com/external/370331493.sd.mp4?s=e90dcaba73c19e0e36f03406b47bbd6992dd6c1c&profile_id=139&oauth2_token_id=57447761"
                                             type="video/mp4">
                                     </video> -->
-                                    <img src="https://media.giphy.com/media/SLRVDTYwgzRrW/giphy.gif" alt="gif of disney parks">
+                                    <img loading="lazy" src="https://media.giphy.com/media/SLRVDTYwgzRrW/giphy.gif" alt="gif of disney parks" style="width:100%">
                                 </div>
                             </div>
                         </div>
@@ -614,7 +614,7 @@
                                             src="https://player.vimeo.com/external/180185916.sd.mp4?s=c893e4770f87b00e0d6b5a1de138b01b02aaa085&profile_id=164&oauth2_token_id=57447761"
                                             type="video/mp4">
                                     </video> -->
-                                    <img id="img-stretch" src="https://media.giphy.com/media/1yiuIqYQJ3BLbbZWOh/giphy.gif" alt="gif of man in resort pool">
+                                    <img loading="lazy" id="img-stretch" src="https://media.giphy.com/media/1yiuIqYQJ3BLbbZWOh/giphy.gif" alt="gif of man in resort pool" style="width:100%">
 
                                 </div>
                             </div>
@@ -643,13 +643,13 @@
             <h2 class="w-full h-20 text-4xl text-center sm:text-left font-cookie">About us</h2>
             <p>Shane is the owner of Countdown to Bliss and enjoys all things travel.
             Vera is a travel advisor at Countdown to Bliss and enjoys...</p>
-            <img src="./assets/places.png" class="mt-10" alt="">
+            <img loading="lazy" src="./assets/places.png" class="mt-10" alt="" style="width:100%">
         </div>
         <div class="px-2 col-span-full sm:col-span-1">
             <h2 class="w-full h-20 text-center text-4xl font-cookie">What our customers say?</h2>
             <div class="w-full grid grid-cols-9 gap-y-5 justify-items-start mt-10">
                 <div class="justify-items-center col-span-2 sm:col-span-1 w-12 h-12 overflow-hidden rounded-full">
-                    <img src="./assets/family1.jpg" class="w-full h-full object-cover object-center" alt="">
+                    <img loading="lazy" src="./assets/family1.jpg" class="w-full h-full object-cover object-center" alt="" style="width:100%">
                 </div>
                 <div class="bg-white col-span-7 sm:col-span-8 rounded-md shadow-xl px-3 py-2 h-auto">
                     <h2 class="text-xl font-medium text-gray-800">Alegna Hollis</h2>
@@ -664,10 +664,10 @@
                     okay. I highly recommend him and I definitely would use his services again.</p>
                 </div>
                 <div class="justify-self-end col-span-2 sm:col-span-1 w-12 h-12 overflow-hidden rounded-full">
-                    <img src="./assets/family1.jpg" class="w-full h-full object-cover object-center" alt="">
+                    <img loading="lazy" src="./assets/family1.jpg" class="w-full h-full object-cover object-center" alt="">
                 </div>
                 <div class="justify-items-center col-span-2 sm:col-span-1 w-12 h-12 overflow-hidden rounded-full">
-                    <img src="./assets/family1.jpg" class="w-full h-full object-cover object-center" alt="">
+                    <img loading="lazy" src="./assets/family1.jpg" class="w-full h-full object-cover object-center" alt="">
                 </div>
                 <div class="bg-white col-span-7 sm:col-span-8 rounded-md shadow-xl px-3 py-2 h-auto">
                     <h2 class="text-xl font-medium text-gray-800">Jeff Omwenga</h2>
@@ -739,7 +739,7 @@
             </a>
 
         </div> -->
-        <img src="./assets/travel-quotation.jpg" id="img-center" alt="A travel quote that says, travel advisors save you time">
+        <img loading="lazy" src="./assets/travel-quotation.jpg" id="img-center" alt="A travel quote that says, travel advisors save you time" style="width:50%">
     </div>
 
 
