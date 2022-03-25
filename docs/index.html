@@ -28,9 +28,9 @@
             class="absolute bottom-0 sm:inset-x-0 z-20 sm:right-0 right-4 flex justify-center items-center flex-col animate-bounce">
             <!-- <h1 class="text-xl font-medium">Contact US</h1> -->
         </div>
-        <div class="w-full h-screen bg-black bg-opacity-60 absolute top-0 left-0 z-10"></div>
+        <div class="w-full h-screen bg-opacity-60 absolute top-0 left-0 z-10"></div>
         <img :src="data[cIndex].bg" class="w-full h-screen absolute top-0 left-0 z-0 object-cover object-center" alt="">
-        <nav x-data="nav" class="w-full top-0 absolute z-20 transition-opacity duration-500"
+        <nav x-data="nav" id="nav-bg" class="w-full top-0 absolute z-20 transition-opacity duration-500"
             x-bind:class="{'bg-black bg-opacity-30':navOpen}">
             <div class="max-w-7xl mx-auto flex justify-between px-4 relative">
                 <!-- Logo -->
@@ -123,19 +123,19 @@
                 <!-- Desktop -->
                 <div class="hidden sm:flex justify-evenly items-center space-x-4">
                     <a href="#home" @click="active = 'home'">
-                        <h1 class="p-3 font-medium transition duration-200"
+                        <h1 id="make-purple" class="add-shadows p-3 font-medium transition duration-200"
                             :class="active == 'home'?'border-b-2 border-white':''">Home</h1>
                     </a>
                     <a href="#popular" @click="active = 'popular_place'">
-                        <h1 class="p-3 font-medium transition duration-200"
+                        <h1 id="make-purple" class="add-shadows p-3 font-medium transition duration-200"
                             :class="active == 'popular_place'?'border-b-2 border-white':''">Popular Places</h1>
                     </a>
                     <a href="#blog" @click="active = 'blog'">
-                        <h1 class="p-3 font-medium transition duration-200"
+                        <h1 id="make-purple" class="add-shadows p-3 font-medium transition duration-200"
                             :class="active == 'blog'?'border-b-2 border-white':''">Blog</h1>
                     </a>
                     <a href="#footer" @click="active = 'contact'">
-                        <h1 class="p-3 font-medium transition duration-200"
+                        <h1 id="make-purple" class="add-shadows p-3 font-medium transition duration-200"
                             :class="active == 'contact'?'border-b-2 border-white':''">Contact</h1>
                     </a>
 
@@ -165,27 +165,27 @@
                         <!-- Item 1 -->
                         <div class="swiper-slide w-full h-40 ">
                             <h1 x-text="data[0].title" class="text-swiper-h1"></h1>
-                            <p x-text="data[0].desc" class="text-white text-sm"></p>
+                            <p x-text="data[0].desc" id ="landing-text" class="text-white text-sm"></p>
                         </div>
                         <!-- Item 2 -->
                         <div class="swiper-slide w-full h-40">
                             <h1 x-text="data[1].title" class="text-swiper-h1"></h1>
-                            <p x-text="data[1].desc" class="text-white text-sm"></p>
+                            <p x-text="data[1].desc" id ="landing-text" class="text-white text-sm"></p>
                         </div>
                         <!-- Item 3 -->
                         <div class="swiper-slide w-full h-40">
                             <h1 x-text="data[2].title" class="text-swiper-h1"></h1>
-                            <p x-text="data[2].desc" class="text-white text-sm"></p>
+                            <p x-text="data[2].desc" id ="landing-text" class="text-white text-sm"></p>
                         </div>
                         <!-- Item 4 -->
                         <div class="swiper-slide w-full h-40">
-                            <h1 x-text="data[3].title" class="text-swiper-h1"></h1>
-                            <p x-text="data[3].desc" class="text-white text-sm"></p>
+                            <h1 id="font-shrink" x-text="data[3].title" class="text-swiper-h1"></h1>
+                            <p x-text="data[3].desc" id ="landing-text" class="text-white text-sm"></p>
                         </div>
                         <!-- Item 5 -->
                         <div class="swiper-slide w-full h-40">
                             <h1 x-text="data[4].title" class="text-swiper-h1"></h1>
-                            <p x-text="data[4].desc" class="text-white text-sm"></p>
+                            <p x-text="data[4].desc" id ="landing-text" class="text-white text-sm"></p>
                         </div>
 
                     </div>
@@ -294,7 +294,7 @@
         <div
             id="word-centered" class="relative bg-opacity-40 p-4 bg-gradient-to-r from-red-600 to-indigo-600 rounded-md px-2 h-full flex flex-col sm:flex-row justify-start items-start space-y-2 sm:space-y-0 sm:justify-between sm:items-center">
             <div class="pl-4">
-                <h1 class="text-2xl font-medium add-text-shadows">Get 10% off on your 1st booking</h1>
+                <h1  class="text-2xl font-medium add-text-shadows">Our vacation planning service is free to you. Tell us where you want to go, and we’ll take care of the rest! </h1>
                 <p id="make-white" class="add-shadows text-sm font-medium">Make your dream reality!</p>
             </div>
             <div class="flex justify-evenly items-center ">
@@ -359,7 +359,7 @@
                     <img src="./assets/couple3.jpg" class="w-full h-full object-center object-cover" alt="">
                 </div>
                 <div class="w-full h-auto rounded-lg row-span-2 relative overflow-hidden">
-                    <img src="./assets/disney1.jpg" class="w-full h-full object-center object-cover" alt="">
+                    <img src="./assets/themepark1.jpg" class="w-full h-full object-center object-cover" alt="">
                 </div>
             </div>
         </div>
@@ -507,7 +507,7 @@
                                 <p class="inside-page__text">
                                     Hit the slope somewhere in Sweden!
                                 </p>
-                                <a href="#" class="inside-page__btn inside-page__btn--ski">View deals</a>
+                                <a href="https://www.viator.com/?pid=P00002881&uid=U00086115&mcid=58086" class="inside-page__btn inside-page__btn--ski">View deals</a>
                             </div>
                         </div>
                     </div>
@@ -640,39 +640,39 @@
     <!-- About Us -->
     <div class="max-w-7xl mx-auto w-full px-2 grid grid-cols-2 gap-y-8 justify-items-center mt-10 pt-5">
         <div class="relative px-4 col-span-full sm:col-span-1">
-            <h2 class="w-full h-20 text-4xl text-center sm:text-left font-cookie">About me</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur error quo fugit eius veniam
-                sapiente suscipit aperiam tenetur. Quia sunt rem necessitatibus sit voluptate eligendi delectus,
-                mollitia aut voluptatem ipsum?Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur
-                error quo fugit eius veniam sapiente suscipit
-                aperiam tenetur. Quia sunt rem necessitatibus sit voluptate eligendi delectus, mollitia aut voluptatem
-                ipsum?</p>
+            <h2 class="w-full h-20 text-4xl text-center sm:text-left font-cookie">About us</h2>
+            <p>Shane is the owner of Countdown to Bliss and enjoys all things travel.
+            Vera is a travel advisor at Countdown to Bliss and enjoys...</p>
             <img src="./assets/places.png" class="mt-10" alt="">
         </div>
         <div class="px-2 col-span-full sm:col-span-1">
             <h2 class="w-full h-20 text-center text-4xl font-cookie">What our customers say?</h2>
             <div class="w-full grid grid-cols-9 gap-y-5 justify-items-start mt-10">
                 <div class="justify-items-center col-span-2 sm:col-span-1 w-12 h-12 overflow-hidden rounded-full">
-                    <img src="./assets/kerala.jpg" class="w-full h-full object-cover object-center" alt="">
+                    <img src="./assets/family1.jpg" class="w-full h-full object-cover object-center" alt="">
                 </div>
                 <div class="bg-white col-span-7 sm:col-span-8 rounded-md shadow-xl px-3 py-2 h-auto">
-                    <h2 class="text-xl font-medium text-gray-800">John Doe</h2>
-                    <p class="text-gray-500">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas provident, cum quos mollitia vel, perferendis ipsa </p>
+                    <h2 class="text-xl font-medium text-gray-800">Alegna Hollis</h2>
+                    <p class="text-gray-500">Countdown to Bliss was so helpful! From helping us find our vacation spot, to communication with the property owner, to
+                    checking in on us throughout the stay! The peace of mind we experienced during the whole process was wonderful!</p>
                 </div>
                 
                 <div class="bg-white col-span-7 sm:col-span-8 rounded-md shadow-xl px-3 py-2 h-auto">
-                    <h2 class="text-xl font-medium text-gray-800">Fazail Alam</h2>
-                    <p class="text-gray-500">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas provident, cum quos mollitia vel, perferendis ipsa </p>
+                    <h2 class="text-xl font-medium text-gray-800">Tezhane Daniels</h2>
+                    <p class="text-gray-500">Shane was the travel agent that helped me and my cousins with our Birthday trip to Jamaica and he was SUPPPERR AMAZING.
+                    He’s very responsive to text messages and calls, and even checked in while we were on our resort to make sure we were
+                    okay. I highly recommend him and I definitely would use his services again.</p>
                 </div>
                 <div class="justify-self-end col-span-2 sm:col-span-1 w-12 h-12 overflow-hidden rounded-full">
-                    <img src="./assets/kerala.jpg" class="w-full h-full object-cover object-center" alt="">
+                    <img src="./assets/family1.jpg" class="w-full h-full object-cover object-center" alt="">
                 </div>
                 <div class="justify-items-center col-span-2 sm:col-span-1 w-12 h-12 overflow-hidden rounded-full">
-                    <img src="./assets/kerala.jpg" class="w-full h-full object-cover object-center" alt="">
+                    <img src="./assets/family1.jpg" class="w-full h-full object-cover object-center" alt="">
                 </div>
                 <div class="bg-white col-span-7 sm:col-span-8 rounded-md shadow-xl px-3 py-2 h-auto">
-                    <h2 class="text-xl font-medium text-gray-800">Rose Bush</h2>
-                    <p class="text-gray-500">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas provident, cum quos mollitia vel, perferendis ipsa </p>
+                    <h2 class="text-xl font-medium text-gray-800">Jeff Omwenga</h2>
+                    <p class="text-gray-500">Exceptional customer service, prompt updates and timely reminders of vacation details. Will highly recommend them to all
+                    our friends and family.</p>
                 </div>
             </div>
         </div>
@@ -681,9 +681,9 @@
 
     <!-- Blog -->
     <div id="blog" class="add-shadows max-w-7xl mx-auto w-full mt-20 px-2 pb-20">
-        <h2 class="w-full text-4xl py-4 pl-8 text-left sm:text-center font-cookie">Blog</h2>
+        <!-- <h2 class="w-full text-4xl py-4 pl-8 text-left sm:text-center font-cookie">Blog</h2>
         <div class="flex flex-wrap justify-center items-center mt-8 space-x-4 space-y-4 sm:space-y-0">
-            <!-- Blog Card 1 -->
+            
             <a href="#" class="apperance-none">
                 <div class="relative group w-72 h-auto rounded-md overflow-hidden bg-white hover:shadow-xl">
                     <img src="./assets/kerala.jpg" class="w-full h-40" alt="">
@@ -701,7 +701,7 @@
                     <p class="px-4 pb-4 text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus saepe earum eum unde sapiente harum tempora ducimus vero veniam mollitia optio officia numquam at deleniti, ab voluptatibus rem iure reiciendis.</p>
                 </div>
             </a>
-            <!-- Blog Card 2 -->
+            
             <a href="#" class="apperance-none">
                 <div class="relative group w-72 h-auto rounded-md overflow-hidden bg-white hover:shadow-xl">
                     <img src="./assets/bali_2.jpg" class="w-full h-40" alt="">
@@ -719,7 +719,7 @@
                     <p class="px-4 pb-4 text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus saepe earum eum unde sapiente harum tempora ducimus vero veniam mollitia optio officia numquam at deleniti, ab voluptatibus rem iure reiciendis.</p>
                 </div>
             </a>
-            <!-- Blog Card 1 -->
+           
             <a href="#" class="apperance-none">
                 <div class="relative group w-72 h-auto rounded-md overflow-hidden bg-white hover:shadow-xl">
                     <img src="./assets/paris.jpg"  class="w-full h-40 object-center object-cover" alt="">
@@ -738,7 +738,8 @@
                 </div>
             </a>
 
-        </div>
+        </div> -->
+        <img src="/docs/assets/travelquote.jpg" id="img-center" alt="A travel quote that says, travel advisors save you time">
     </div>
 
 
@@ -746,7 +747,7 @@
         <div class="max-w-7xl mx-auto w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 px-2 py-4 gap-y-10">
             <!-- Contact -->
             <ul class="w-full space-y-2">
-                <li class="appearance-none"><h1 class="font-semibold text-xl pb-1">Contact me</h1></li>
+                <li class="appearance-none"><h1 class="font-semibold text-xl pb-1">Contact us</h1></li>
                 <li class="appearance-none flex items-center"><i class="text-white mr-2"></i><h1>Florida Seller of Travel Ref. No.</h1></li>
                 <li class="appearance-none flex items-center"><i class="text-white mr-2"></i><h1>ST15589- CST 2090937-50</h1></li>
                 <li class="appearance-none flex items-center"><i class="text-white mr-2"></i><h1>Washington UBID No. 603189022 Iowa Registered Agency No. 1202</h1></li>
