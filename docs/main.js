@@ -14,7 +14,7 @@ document.addEventListener("alpine:init", () => {
         desc: "We can help you see more of the world and help make your vacation dreams a reality. Whether you want to discover locales in the US, go to the Caribbean or even Antarctica, we can help with all that and everything in between!",
       },
       {
-        image: "https://res.cloudinary.com/dusqzrzpp/image/upload/c_scale,g_south_west,w_277/v1648596570/photo-1510132310763-2df322eed83f_ffa7ol.jpg",
+        image: "https://res.cloudinary.com/dusqzrzpp/image/upload/c_scale,g_south_west,w_351/v1648596570/photo-1510132310763-2df322eed83f_ffa7ol.jpg",
         bg: "https://res.cloudinary.com/dusqzrzpp/image/upload/c_scale,w_592/v1648596540/photo-1558923240-2672e219374b_b5ateo.jpg",
         title: "Cruises",
         rating: 5,
