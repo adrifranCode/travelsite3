@@ -35,7 +35,7 @@
             <div class="max-w-7xl mx-auto flex justify-between px-4 relative">
                 <!-- Logo -->
                 <a href="#">
-                    <img class="add-shadows h-full leading-loose" id="logo-resize" src="assets/logo-removebg-preview.png" alt="Countdown to Bliss Logo">
+                    <img class="h-full leading-loose" id="logo-resize" src="assets/logo-removebg-preview.png" alt="Countdown to Bliss Logo">
                     <!-- <h1 class="text-2xl font-black h-full leading-loose" id="logoFont">Countdown to Bliss</h1> -->
                 </a>
                 
@@ -115,7 +115,7 @@
                         </a>
                         <div class="flex justify-evenly items-center ">
                             <!-- <button class="px-4 py-1 text-white rounded-md font-medium">Login</button> -->
-                            <button
+                            <button onclick="location.href='https://travefy.com/f/6kw8rcdtqntdrwye9pjvmy22awg4s'" type="button"
                                 class="px-4 py-1 text-white rounded-md font-medium bg-gradient-to-br from-blue-500 to-blue-600">Book Now</button>
                         </div>
                     </div>
@@ -123,19 +123,19 @@
                 <!-- Desktop -->
                 <div class="hidden sm:flex justify-evenly items-center space-x-4">
                     <a href="#home" @click="active = 'home'">
-                        <h1 id="make-purple" class="add-shadows p-3 font-medium transition duration-200"
+                        <h1 id="make-purple" class="p-3 font-medium transition duration-200"
                             :class="active == 'home'?'border-b-2 border-white':''">Home</h1>
                     </a>
                     <a href="#popular" @click="active = 'popular_place'">
-                        <h1 id="make-purple" class="add-shadows p-3 font-medium transition duration-200"
+                        <h1 id="make-purple" class="p-3 font-medium transition duration-200"
                             :class="active == 'popular_place'?'border-b-2 border-white':''">Popular Places</h1>
                     </a>
                     <a href="#blog" @click="active = 'blog'">
-                        <h1 id="make-purple" class="add-shadows p-3 font-medium transition duration-200"
+                        <h1 id="make-purple" class="p-3 font-medium transition duration-200"
                             :class="active == 'blog'?'border-b-2 border-white':''">Blog</h1>
                     </a>
                     <a href="#footer" @click="active = 'contact'">
-                        <h1 id="make-purple" class="add-shadows p-3 font-medium transition duration-200"
+                        <h1 id="make-purple" class="p-3 font-medium transition duration-200"
                             :class="active == 'contact'?'border-b-2 border-white':''">Contact</h1>
                     </a>
 
@@ -143,8 +143,8 @@
                 <!-- Login Buttons -->
                 <div class="hidden sm:flex justify-evenly items-center">
                     <!-- <button class="px-4 py-1 text-whloginite rounded-md font-medium">Login</button> -->
-                    <button
-                        class="px-4 py-1 text-white rounded-md font-medium bg-gradient-to-br from-blue-500 to-blue-600 add-shadows add-text-shadows">Book</button>
+                    <button onclick="location.href='https://travefy.com/f/6kw8rcdtqntdrwye9pjvmy22awg4s'" type="button"
+                        class="px-4 py-1 text-white rounded-md font-medium bg-gradient-to-br from-blue-500 to-blue-600 add-text-shadows">Book</button>
                     <!-- <button class="px-4" @click="searchBar = true; $nextTick(() => $refs.search.focus());">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
                             stroke="currentColor">
@@ -164,7 +164,7 @@
                     <div class="swiper-wrapper">
                         <!-- Item 1 -->
                         <div class="swiper-slide w-full h-40 ">
-                            <h1 x-text="data[0].title" class="text-swiper-h1"></h1>
+                            <h1 id="font-shrink" x-text="data[0].title" class="text-swiper-h1"></h1>
                             <p x-text="data[0].desc" id ="landing-text" class="text-white text-sm"></p>
                         </div>
                         <!-- Item 2 -->
@@ -190,7 +190,7 @@
 
                     </div>
                 </div>
-                <button
+                <button onclick="location.href='https://travefy.com/f/6kw8rcdtqntdrwye9pjvmy22awg4s'" type="button"
                     class="add-shadows group text-white flex py-2 px-4 self-start bg-gradient-to-br from-blue-500 to-blue-600 rounded-lg mt-2 hover:bg-white hover:text-blue-500 transition-all duration-500">
                     <h1 class="pr-2 add-text-shadows">Book Now</h1>
                     <svg xmlns="http://www.w3.org/2000/svg"
@@ -435,7 +435,7 @@
                                 <p class="inside-page__text">
                                     Disney is a world of fantasy, happiness, and magic!
                                 </p>
-                                <a href="#" class="inside-page__btn inside-page__btn--city">View deals</a>
+                                <a href="https://www.disneytravelcenter.com/msf9aca848/" class="inside-page__btn inside-page__btn--city">View deals</a>
                             </div>
                         </div>
                     </div>
@@ -507,7 +507,9 @@
                                 <p class="inside-page__text">
                                     Hit the slope somewhere in Sweden!
                                 </p>
-                                <a href="https://www.viator.com/?pid=P00002881&uid=U00086115&mcid=58086" class="inside-page__btn inside-page__btn--ski">View deals</a>
+                                <a href="https://www.viator.com/?pid=P00002881&uid=U00086115&mcid=58086" class="fontbtn-move inside-page__btn--ski">Viator Deals</a>
+                                <a href="https://www.projectexpedition.com/?utm_source=countdowntobliss-26621-sclarke-47109&utm_medium=referral&utm_campaign=tagent"
+                                    class ="fontbtn-move">Expedition Deals</a>
                             </div>
                         </div>
                     </div>
@@ -534,10 +536,10 @@
                                         </svg>
         
                                         <h2 class="card-front__heading">
-                                            Event Tickets
+                                            Purchas Event 
                                         </h2>
                                         <p class="card-front__text-price">
-                                            From £129
+                                            Tickets
                                         </p>
                                     </div>
         
@@ -649,7 +651,7 @@
             <h2 class="w-full h-20 text-center text-4xl font-cookie">What our customers say?</h2>
             <div class="w-full grid grid-cols-9 gap-y-5 justify-items-start mt-10">
                 <div class="justify-items-center col-span-2 sm:col-span-1 w-12 h-12 overflow-hidden rounded-full">
-                    <img loading="lazy" src="./assets/family1.jpg" class="w-full h-full object-cover object-center" alt="" style="width:100%">
+                    <img loading="lazy" src="https://res.cloudinary.com/dusqzrzpp/image/upload/c_scale,r_12,w_200/v1648592751/tom-jur-7vkeQZJ5ACA-unsplash_rsuymy.jpg" class="w-full h-full object-cover object-center" alt="" style="width:100%">
                 </div>
                 <div class="bg-white col-span-7 sm:col-span-8 rounded-md shadow-xl px-3 py-2 h-auto">
                     <h2 class="text-xl font-medium text-gray-800">Alegna Hollis</h2>
@@ -664,10 +666,10 @@
                     okay. I highly recommend him and I definitely would use his services again.</p>
                 </div>
                 <div class="justify-self-end col-span-2 sm:col-span-1 w-12 h-12 overflow-hidden rounded-full">
-                    <img loading="lazy" src="./assets/family1.jpg" class="w-full h-full object-cover object-center" alt="">
+                    <img loading="lazy" src="https://res.cloudinary.com/dusqzrzpp/image/upload/v1648594535/smallprof2_o8tjei.jpg" alt="">
                 </div>
                 <div class="justify-items-center col-span-2 sm:col-span-1 w-12 h-12 overflow-hidden rounded-full">
-                    <img loading="lazy" src="./assets/family1.jpg" class="w-full h-full object-cover object-center" alt="">
+                    <img loading="lazy" src="https://res.cloudinary.com/dusqzrzpp/image/upload/v1648594535/smallprof1_t9mbub.jpg" alt="">
                 </div>
                 <div class="bg-white col-span-7 sm:col-span-8 rounded-md shadow-xl px-3 py-2 h-auto">
                     <h2 class="text-xl font-medium text-gray-800">Jeff Omwenga</h2>
