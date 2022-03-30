@@ -29,7 +29,7 @@
             <!-- <h1 class="text-xl font-medium">Contact US</h1> -->
         </div>
         <div class="w-full h-screen bg-opacity-60 absolute top-0 left-0 z-10"></div>
-        <img loading="lazy" :src="data[cIndex].bg" class="w-full h-screen absolute top-0 left-0 z-0 object-cover object-center" alt="" style="width:100%; filter: brightness(0.3)">
+        <img :src="data[cIndex].bg" class="w-full h-screen absolute top-0 left-0 z-0 object-cover object-center" alt="" style="width:100%; filter: brightness(0.3)">
         <nav x-data="nav" id="nav-bg" class="w-full top-0 absolute z-20 transition-opacity duration-500"
             x-bind:class="{'bg-black bg-opacity-30':navOpen}">
             <div class="max-w-7xl mx-auto flex justify-between px-4 relative">
@@ -215,7 +215,7 @@
                                         :class="'bg-gray-100'"></div>
                                 </template>
                             </div>
-                            <img loading="lazy" :src="data[0].image"
+                            <img :src="data[0].image"
                                 class="relative w-64 rounded-md shadow-lg object-cover object-center" alt="" style="width:100%">
                         </div>
                         <!-- Card 2 -->
@@ -649,7 +649,7 @@
             industry and moved quickly into the airline industry. Vera explains that Travel allows her to see new places and
             interact with new people while experiencing various activities and trying new foods and beverages and hopes to help
             others experience some of the same!</p>
-            <img loading="lazy" src="./assets/places.png" class="mt-10" alt="" style="width:100%">
+            <!-- <img loading="lazy" src="./assets/places.png" class="mt-10" alt="" style="width:100%"> -->
         </div>
         <div class="px-2 col-span-full sm:col-span-1">
             <h2 class="make-logo-purple w-full h-20 text-center text-4xl font-cookie">What our customers say?</h2>
