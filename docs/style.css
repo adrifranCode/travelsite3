@@ -1704,6 +1704,10 @@ button:focus {
   font-size: 2.5rem;
 }
 
+#spacing-above {
+  margin-top: 10px;
+}
+
 /* CSS reset */
 .container-reset {
   box-sizing: border-box;
@@ -2216,8 +2220,9 @@ button:focus {
 
 #landing-text {
   /* filter: drop-shadow(2px 4px 1px black); */
-  background-color: rgba(0, 0, 0, 0.21);
-  box-shadow: 0 0 89px 2px rgb(0 0 0 / 21%) inset;
+  filter: drop-shadow(1px 1px 1px black);
+  /* background-color: rgba(0, 0, 0, 0.21); */
+  /* box-shadow: 0 0 89px 2px rgb(0 0 0 / 21%) inset; */
   padding: 15px;
   height: 97px;
 }

@@ -39,7 +39,7 @@ document.addEventListener("alpine:init", () => {
         bg: "https://res.cloudinary.com/dusqzrzpp/image/upload/c_scale,w_1367/v1648597811/tour1_nhpusl.jpg",
         title: "Groups",
         rating: 5,
-        desc: "life is just more fun with others! We can take the hard work away by planning your family reunion, class reunion, friends trip, birthday celebration, business trip, destination wedding and so much more",
+        desc: "Life is just more fun with others! We can take the hard work away by planning your family reunion, class reunion, friends trip, birthday celebration, business trip, destination wedding and so much more",
       },
     ],
     text_swiper: null,
