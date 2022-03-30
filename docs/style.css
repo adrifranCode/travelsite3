@@ -1684,6 +1684,10 @@ button:focus {
   outline-offset: 2px;
 }
 
+.make-logo-purple {
+  color: #662480;
+}
+
 #make-white {
   color: white;
 }
