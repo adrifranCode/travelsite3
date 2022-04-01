@@ -8,20 +8,20 @@ document.addEventListener("alpine:init", () => {
     data: [
       {
         image: "https://res.cloudinary.com/dusqzrzpp/image/upload/c_scale,h_353/v1648596022/europe1_k69qda.jpg",
-        bg: "https://res.cloudinary.com/dusqzrzpp/image/upload/c_scale,w_474/v1648596025/europe2_nxsns7.webp",
+        bg: "https://res.cloudinary.com/dusqzrzpp/image/upload/c_scale,w_674/v1648596025/europe2_nxsns7.webp",
         title: "Amazing Destinations",
         rating: 5,
         desc: "We can help you see more of the world and help make your vacation dreams a reality. Whether you want to discover locales in the US, go to the Caribbean or even Antarctica, we can help with all that and everything in between!",
       },
       {
-        image: "https://res.cloudinary.com/dusqzrzpp/image/upload/c_scale,g_south_west,w_351/v1648596570/photo-1510132310763-2df322eed83f_ffa7ol.jpg",
-        bg: "https://res.cloudinary.com/dusqzrzpp/image/upload/c_scale,w_592/v1648596540/photo-1558923240-2672e219374b_b5ateo.jpg",
+        image: "https://res.cloudinary.com/dusqzrzpp/image/upload/c_scale,g_south_west,w_551/v1648596570/photo-1510132310763-2df322eed83f_ffa7ol.jpg",
+        bg: "https://res.cloudinary.com/dusqzrzpp/image/upload/c_scale,w_792/v1648596540/photo-1558923240-2672e219374b_b5ateo.jpg",
         title: "Cruises",
         rating: 5,
         desc: "Sail the seas and experience multiple destinations during one amazing journey. We book all the top lines including from family friendly, adult only, luxury lines and more",
       },
       {
-        image: "https://res.cloudinary.com/dusqzrzpp/image/upload/c_scale,w_430/v1648597520/couple5_enrofc.jpg",
+        image: "https://res.cloudinary.com/dusqzrzpp/image/upload/c_scale,w_530/v1648597520/couple5_enrofc.jpg",
         bg: "https://res.cloudinary.com/dusqzrzpp/image/upload/c_scale,w_542/v1648597374/photo-1582719508461-905c673771fd_k5aqo2.jpg",
         title: "All Inclusive",
         rating: 5,
@@ -36,7 +36,7 @@ document.addEventListener("alpine:init", () => {
       },
       {
         image: "https://res.cloudinary.com/dusqzrzpp/image/upload/c_scale,w_345/v1648597828/photo-1607748862156-7c548e7e98f4_kd3pfh.webp",
-        bg: "https://res.cloudinary.com/dusqzrzpp/image/upload/c_scale,w_467/v1648597811/tour1_nhpusl.jpg",
+        bg: "https://res.cloudinary.com/dusqzrzpp/image/upload/c_scale,w_667/v1648597811/tour1_nhpusl.jpg",
         title: "Groups",
         rating: 5,
         desc: "Life is just more fun with others! We can take the hard work away by planning your family reunion, class reunion, friends trip, birthday celebration, business trip, destination wedding and so much more",

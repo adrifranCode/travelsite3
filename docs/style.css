@@ -1742,6 +1742,10 @@ button:focus {
   font-size: 2.5rem;
 }
 
+#font-shrink2 {
+  padding: 1px;
+}
+
 .spacing-above {
   margin-top: 10px;
 }
@@ -2333,6 +2337,18 @@ button:focus {
   }
 
   #font-shrink {
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 420px) and (max-width: 1040px) {
+  #font-shrink {
+    font-size: 1.4rem;
+  }
+}
+
+@media (min-width: 420px) and (max-width: 730px) {
+  #font-shrink2 {
     font-size: 1.5rem;
   }
 }
