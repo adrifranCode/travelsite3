@@ -36,7 +36,7 @@ document.addEventListener("alpine:init", () => {
       },
       {
         image: "https://res.cloudinary.com/dusqzrzpp/image/upload/c_scale,w_345/v1648597828/photo-1607748862156-7c548e7e98f4_kd3pfh.webp",
-        bg: "https://res.cloudinary.com/dusqzrzpp/image/upload/c_scale,w_667/v1648597811/tour1_nhpusl.jpg",
+        bg: "https://res.cloudinary.com/dusqzrzpp/image/upload/c_scale,w_685/v1648787167/duy-pham-Cecb0_8Hx-o-unsplash_f5ai9r.webp",
         title: "Groups",
         rating: 5,
         desc: "Life is just more fun with others! We can take the hard work away by planning your family reunion, class reunion, friends trip, birthday celebration, business trip, destination wedding and so much more",
