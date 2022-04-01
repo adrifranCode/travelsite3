@@ -1748,6 +1748,7 @@ button:focus {
 
 #font-shrink {
   font-size: 2.5rem;
+  font-weight: bold;
 }
 
 #font-shrink2 {

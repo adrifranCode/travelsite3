@@ -8,11 +8,9 @@
     <title>Countdown to Bliss Travel Agency Orlando Fl</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Nunito&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <!-- <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap" rel="stylesheet"> -->
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" /> -->
+
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> -->
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
@@ -21,7 +19,9 @@
 </head>
 
 <body class="w-full h-screen bg-slate-100">
-
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+    </style>
     <!-- Hero -->
     <div id="home" x-data="hero" class="w-full h-screen">
         <div
@@ -116,7 +116,7 @@
                         <div class="flex justify-evenly items-center ">
                             <!-- <button class="px-4 py-1 text-white rounded-md font-medium">Login</button> -->
                             <button onclick="location.href='https://travefy.com/f/6kw8rcdtqntdrwye9pjvmy22awg4s'" type="button"
-                                class="button-34 px-4 py-1 text-white rounded-md font-medium">Book Now</button>
+                                style="font-family:Montserrat" class="button-34 px-4 py-1 text-white rounded-md font-medium">Book Now</button>
                         </div>
                     </div>
                 </div>
@@ -164,27 +164,27 @@
                     <div class="swiper-wrapper">
                         <!-- Item 1 -->
                         <div class="swiper-slide w-full h-40 ">
-                            <h1 id="font-shrink" x-text="data[0].title" class="text-swiper-h1"></h1>
+                            <h1 id="font-shrink" x-text="data[0].title" class="text-swiper-h1" style="font-family:Montserrat"></h1>
                             <p x-text="data[0].desc" id ="landing-text" class="text-white text-sm"></p>
                         </div>
                         <!-- Item 2 -->
                         <div class="swiper-slide w-full h-40">
-                            <h1 id="font-shrink" x-text="data[1].title" class="text-swiper-h1"></h1>
+                            <h1 id="font-shrink" x-text="data[1].title" class="text-swiper-h1" style="font-family:Montserrat"></h1>
                             <p x-text="data[1].desc" id ="landing-text" class="text-white text-sm"></p>
                         </div>
                         <!-- Item 3 -->
                         <div class="swiper-slide w-full h-40">
-                            <h1 id="font-shrink" x-text="data[2].title" class="text-swiper-h1"></h1>
+                            <h1 id="font-shrink" x-text="data[2].title" class="text-swiper-h1" style="font-family:Montserrat"></h1>
                             <p x-text="data[2].desc" id ="landing-text" class="text-white text-sm"></p>
                         </div>
                         <!-- Item 4 -->
                         <div class="swiper-slide w-full h-40">
-                            <h1 id="font-shrink" x-text="data[3].title" class="text-swiper-h1"></h1>
+                            <h1 id="font-shrink" x-text="data[3].title" class="text-swiper-h1" style="font-family:Montserrat"></h1>
                             <p x-text="data[3].desc" id ="landing-text" class="text-white text-sm"></p>
                         </div>
                         <!-- Item 5 -->
                         <div class="swiper-slide w-full h-40">
-                            <h1 id="font-shrink" x-text="data[4].title" class="text-swiper-h1"></h1>
+                            <h1 id="font-shrink" x-text="data[4].title" class="text-swiper-h1" style="font-family:Montserrat"></h1>
                             <p x-text="data[4].desc" id ="landing-text" class="text-white text-sm"></p>
                         </div>
 
@@ -192,7 +192,7 @@
                 </div>
                 <button onclick="location.href='https://travefy.com/f/6kw8rcdtqntdrwye9pjvmy22awg4s'" type="button"
                     class="button-34 group rounded-md text-white flex py-2 px-4 self-start">
-                    <h1 class="pr-2 add-text-shadows">Book Now</h1>
+                    <h1 style="font-family:Montserrat" class="pr-2 add-text-shadows">Book Now</h1>
                     <svg xmlns="http://www.w3.org/2000/svg"
                         class="h-6 w-0 sm:group-hover:w-6 transition-all duration-500" fill="none" viewBox="0 0 24 24"
                         stroke="currentColor">
@@ -208,7 +208,7 @@
                     <div class="swiper-wrapper custom inset-y-0 add-shadows" id="container-shrink">
                         <!-- Card 1 -->
                         <div class="swiper-slide relative w-64 h-[400px] rounded-md">
-                            <h1 x-text="data[0].title" class="text-xl font-medium pl-2"></h1>
+                            <h1 style="font-family:Montserrat" x-text="data[0].title" class="text-xl font-medium pl-2"></h1>
                             <div class="flex justify-start items-center space-x-2 py-1">
                                 <template x-for="i in 5" :key="i">
                                     <div class="w-2 h-2 rounded-full"
@@ -220,7 +220,7 @@
                         </div>
                         <!-- Card 2 -->
                         <div class="swiper-slide relative w-64 h-[400px] rounded-md">
-                            <h1 x-text="data[1].title" class="text-xl font-medium pl-2"></h1>
+                            <h1 style="font-family:Montserrat" x-text="data[1].title" class="text-xl font-medium pl-2"></h1>
                             <div class="flex justify-start items-center space-x-2 py-1">
                                 <template x-for="i in 5" :key="i">
                                     <div class="w-2 h-2 rounded-full"
@@ -232,7 +232,7 @@
                         </div>
                         <!-- Card 3 -->
                         <div class="swiper-slide relative w-64 h-[400px] rounded-md">
-                            <h1 x-text="data[2].title" class="text-xl font-medium pl-2"></h1>
+                            <h1 style="font-family:Montserrat" x-text="data[2].title" class="text-xl font-medium pl-2"></h1>
                             <div class="flex justify-start items-center space-x-2 py-1">
                                 <template x-for="i in 5" :key="i">
                                     <div class="w-2 h-2 rounded-full"
@@ -244,7 +244,7 @@
                         </div>
                         <!-- Card 4 -->
                         <div class="swiper-slide relative w-64 h-[400px] rounded-md">
-                            <h1 x-text="data[3].title" class="text-xl font-medium pl-2"></h1>
+                            <h1 style="font-family:Montserrat" x-text="data[3].title" class="text-xl font-medium pl-2"></h1>
                             <div class="flex justify-start items-center space-x-2 py-1">
                                 <template x-for="i in 5" :key="i">
                                     <div class="w-2 h-2 rounded-full"
@@ -256,7 +256,7 @@
                         </div>
                         <!-- Card 5 -->
                         <div class="swiper-slide relative w-64 h-[400px] rounded-md">
-                            <h1 x-text="data[4].title" class="text-xl font-medium pl-2"></h1>
+                            <h1 style="font-family:Montserrat" x-text="data[4].title" class="text-xl font-medium pl-2"></h1>
                             <div class="flex justify-start items-center space-x-2 py-1">
                                 <template x-for="i in 5" :key="i">
                                     <div class="w-2 h-2 rounded-full"
@@ -294,8 +294,8 @@
         <div
             id="word-centered" class="relative bg-opacity-40 p-4 rounded-md px-2 h-full flex flex-col sm:flex-row justify-start items-start space-y-2 sm:space-y-0 sm:justify-between sm:items-center">
             <div class="pl-4">
-                <h1  class="text-2xl font-medium add-text-shadows">Our vacation planning service is free to you. Tell us where you want to go, and we’ll take care of the rest! </h1>
-                <p id="make-white" class="add-shadows text-sm font-medium">Make your dream reality!</p>
+                <h1  style="font-family:Montserrat" class="text-2xl font-medium add-text-shadows">Our vacation planning service is free to you. Tell us where you want to go, and we’ll take care of the rest! </h1>
+                <p style="font-family:Montserrat" id="make-white" class="add-shadows text-sm font-medium">Make your dream reality!</p>
             </div>
             <div class="flex justify-evenly items-center ">
                 <!-- <button class="px-4 py-1 text-white rounded-md font-medium">Login</button> -->
