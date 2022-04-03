@@ -11,7 +11,7 @@ document.addEventListener("alpine:init", () => {
         bg: "https://res.cloudinary.com/dusqzrzpp/image/upload/c_scale,w_674/v1648596025/europe2_nxsns7.webp",
         title: "Amazing Destinations",
         rating: 5,
-        desc: "We can help you see more of the world and help make your vacation dreams a reality. Whether you want to discover locales in the US, go to the Caribbean or even Antarctica, we can help with all that and everything in between!",
+        desc: "We can make seeing the world a reality. Whether you want to discover locales in the US, go to the Caribbean or even Antarctica, we can help with all that and everything in between! Let's get closer the the coundown to your next trip!",
       },
       {
         image: "https://res.cloudinary.com/dusqzrzpp/image/upload/c_scale,g_south_west,w_551/v1648596570/photo-1510132310763-2df322eed83f_ffa7ol.jpg",

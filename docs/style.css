@@ -1466,7 +1466,7 @@ button:focus {
 }
 
 .text-sm {
-  font-size: 0.875rem;
+  font-size: 0.745rem;
   line-height: 1.25rem;
 }
 
@@ -2256,6 +2256,10 @@ button:focus {
   box-shadow: 2px 2px 52px;
 }
 
+/* #p-shrink {
+  font-size: 1rem;
+} */
+
 #popular {
   filter: drop-shadow(2px 2px 3px black);
   padding-top: 20px;
@@ -2265,7 +2269,7 @@ button:focus {
   filter: drop-shadow(3px 1px 4px black);
 }
 
-#footer {
+#tandc {
   background-color: #662587;
 }
 
@@ -2338,7 +2342,7 @@ button:focus {
   }
 
   .text-3xl {
-    font-size: 1.75rem;
+    font-size: 1.385rem;
   }
 
   #arrow-disappear {
@@ -2347,6 +2351,12 @@ button:focus {
 
   #font-shrink {
     font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 300px) {
+  .text-3xl {
+    font-size: 1rem;
   }
 }
 
