@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countdown to Bliss Terms and Conditions Travel Agency Orlando Fl</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Nunito&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script defer src="https://unpkg.com/alpinejs@3.7.1/dist/cdn.min.js"></script>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body class="w-full h-screen bg-slate-100">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+    </style>
+    <!-- Hero -->
+    <div style="height:10px; box-shadow:0px 0px 0px" id="home" x-data="hero" class="w-full h-screen">
+        <div
+            class="absolute bottom-0 sm:inset-x-0 z-20 sm:right-0 right-4 flex justify-center items-center flex-col animate-bounce">
+            <!-- <h1 class="text-xl font-medium">Contact US</h1> -->
+        </div>
+        <div class="w-full h-screen bg-opacity-60 absolute top-0 left-0 z-10"></div>
+        <img :src="data[cIndex].bg" class="w-full h-screen absolute top-0 left-0 z-0 object-cover object-center" alt=""
+            style="width:100%; filter: brightness(0.3)">
+        <nav x-data="nav" id="nav-bg" class="w-full top-0 absolute z-20 transition-opacity duration-500"
+            x-bind:class="{'bg-black bg-opacity-30':navOpen}">
+            <div class="max-w-7xl mx-auto flex justify-between px-4 relative">
+                <!-- Logo -->
+                <a href="#">
+                    <img class="h-full leading-loose" id="logo-resize"
+                        src="https://res.cloudinary.com/dusqzrzpp/image/upload/c_scale,w_198/v1648620658/logo-removebg-preview_ogblb2.webp"
+                        alt="Countdown to Bliss Logo">
+                    <!-- <h1 class="text-2xl font-black h-full leading-loose" id="logoFont">Countdown to Bliss</h1> -->
+                </a>
+
+                <!-- SearchBar -->
+                <!-- <div x-cloak x-show="searchBar" x-transition:enter="transition ease-out duration-200"
+                    x-transition:enter-start="opacity-0 transform -translate-y-5"
+                    x-transition:enter-end="opacity-100 transform translate-y-0"
+                    x-transition:leave="transition ease-in duration-300"
+                    x-transition:leave-start="opacity-100 transform translate-y-0"
+                    x-transition:leave-end="opacity-0 transform -translate-y-5"
+                    class="bg-white absolute top-0 right-0 w-full flex justify-center items-center space-x-2 px-2 h-12 sm:w-80 sm:top-14  sm:rounded sm:shadow-md">
+                    <input type="text" placeholder=" Search" x-ref="search"
+                        class="w-full appearance-none border-none bg-transparent py-2 px-3 texy-gray-700 leading-tight focus:outline-none">
+                    <button @click="searchBar = false">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-700" fill="none"
+                            viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                    </button>
+                </div> -->
+                <!-- Mobile -->
+                <div class="sm:hidden flex justify-center items-center">
+                    <!-- Search Icon -->
+                    <!-- <button @click="searchBar = true; $nextTick(() => $refs.search.focus());">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                        </svg>
+                    </button> -->
+                    <!-- Menu Icons -->
+                    <button class="py-3 ml-3" @click="navOpen=!navOpen">
+                        <svg :class="navOpen?'hidden':''" xmlns="http://www.w3.org/2000/svg" class="gold h-6 w-6"
+                            fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16m-7 6h7" />
+                        </svg>
+                        <svg x-cloak :class="navOpen?'':'hidden'" xmlns="http://www.w3.org/2000/svg"
+                            class="gold h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                    </button>
+                </div>
+                <!-- Mobile Drawer -->
+                <div x-cloak x-show="navOpen" @click.outside="navOpen = false"
+                    x-transition:enter="transition ease-out duration-300"
+                    x-transition:enter-start="opacity-0 transform -translate-y-5"
+                    x-transition:enter-end="opacity-100 transform translate-y-0"
+                    x-transition:leave="transition ease-in duration-300"
+                    x-transition:leave-start="opacity-100 transform translate-y-0"
+                    x-transition:leave-end="opacity-0 transform -translate-y-5"
+                    class="sm:hidden fixed top-12 left-0 w-full bg-black bg-opacity-30 shadow-md">
+                    <div class="relative h-full flex justify-center items-center space-y-5 flex-col pb-3">
+                        <a href="#home" @click="active = 'home'; navOpen = false">
+                            <h1 class="p-3 transition duration-200"
+                                :class="active == 'home'?'border-b-2 border-white':''">Home
+                            </h1>
+                        </a>
+
+                        <a href="#popular" @click="active = 'popular_place'; navOpen = false">
+                            <h1 class="p-3 transition duration-200"
+                                :class="active == 'popular_place'?'border-b-2 border-white':''">Popular Places
+                            </h1>
+                        </a>
+                        <a href="#blog" @click="active = 'blog'; navOpen = false">
+                            <h1 class="p-3 transition duration-200"
+                                :class="active == 'blog'?'border-b-2 border-white':''">Blog
+                            </h1>
+                        </a>
+                        <a href="#footer" @click="active = 'contact'; navOpen = false">
+                            <h1 class="p-3 transition duration-200"
+                                :class="active == 'contact'?'border-b-2 border-white':''">
+                                Contact Info
+                            </h1>
+                        </a>
+                        <div class="flex justify-evenly items-center ">
+                            <!-- <button class="px-4 py-1 text-white rounded-md font-medium">Login</button> -->
+                            <button onclick="location.href='https://travefy.com/f/6kw8rcdtqntdrwye9pjvmy22awg4s'"
+                                type="button" style="font-family:Montserrat"
+                                class="button-34 px-4 py-1 text-white rounded-md font-medium">Book Now</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Desktop -->
+                <div class="hidden sm:flex justify-evenly items-center space-x-4">
+                    <a href="#home" @click="active = 'home'">
+                        <h1 id="make-purple" class="p-3 font-medium transition duration-200"
+                            :class="active == 'home'?'border-b-2 border-white':''">Home</h1>
+                    </a>
+                    <a href="#popular" @click="active = 'popular_place'">
+                        <h1 id="make-purple" class="p-3 font-medium transition duration-200"
+                            :class="active == 'popular_place'?'border-b-2 border-white':''">Popular Places</h1>
+                    </a>
+                    <a href="#blog" @click="active = 'blog'">
+                        <h1 id="make-purple" class="p-3 font-medium transition duration-200"
+                            :class="active == 'blog'?'border-b-2 border-white':''">Blog</h1>
+                    </a>
+                    <a href="#footer" @click="active = 'contact'">
+                        <h1 id="make-purple" class="p-3 font-medium transition duration-200"
+                            :class="active == 'contact'?'border-b-2 border-white':''">Contact</h1>
+                    </a>
+
+                </div>
+                <!-- Login Buttons -->
+                <div class="hidden sm:flex justify-evenly items-center">
+                    <!-- <button class="px-4 py-1 text-whloginite rounded-md font-medium">Login</button> -->
+                    <button onclick="location.href='https://travefy.com/f/6kw8rcdtqntdrwye9pjvmy22awg4s'" type="button"
+                        class="button-34 px-4 py-1 text-white rounded-md font-medium">Book</button>
+                    <!-- <button class="px-4" @click="searchBar = true; $nextTick(() => $refs.search.focus());">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                        </svg>
+                    </button> -->
+                </div>
+
+            </div>
+        </nav>
+
+        <div class="relative z-10 grid grid-cols-1 sm:grid-cols-2 w-full min-h-screen add-more-shadows">
+           
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Offer -->
+    <div class="max-w-7xl mx-auto w-full mt-10 px-2">
+        <img loading="lazy" class="h-full leading-loose center marginless"
+            src="https://res.cloudinary.com/dusqzrzpp/image/upload/c_scale,w_1158/v1648620658/logo-removebg-preview_ogblb2.webp"
+            alt="Countdown to Bliss Logo">
+        <div id="word-centered"
+            class="relative bg-opacity-40 p-4 rounded-md px-2 h-full flex flex-col sm:flex-row justify-start items-start space-y-2 sm:space-y-0 sm:justify-between sm:items-center">
+            <div class="pl-4">
+                <h1 style="font-family:Montserrat" class="text-2xl font-medium add-text-shadows">Read our Terms and Conditions below: </h1>
+                <a style="font-family:Montserrat; color:goldenrod" class="text-2xl font-medium add-text-shadows" href="https://drive.google.com/file/d/1TEOA6rKsT__86xUFIS7pz2yXrnCvG-G3/view?usp=sharing">Link</a>
+            </div>
+            <div class="flex justify-evenly items-center ">
+                <!-- <button class="px-4 py-1 text-white rounded-md font-medium">Login</button> -->
+                <!-- <button
+                    class="px-4 py-1 text-white rounded-md font-medium bg-gradient-to-br from-blue-500 to-blue-600">Sign
+                    up</button> -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Book -->
+    <!-- <div id="popular" x-data="journey"
+        class="max-w-7xl mx-auto w-full relative px-2 mt-10 sm:px-3 xl:p-0 grid grid-cols-5 gap-3 min-h-screen sm:h-screen py-5">
+        <div class="col-span-full sm:col-span-2 relative bg-white shadow-xl rounded-md h-[600px] sm:h-3/4 py-3">
+            <div class="relative pb-7 px-5">
+                <button @click="way = false">
+                    <h2 class="px-4 rounded-full py-1"
+                        x-bind:class="{'text-white rounded-md font-medium bg-gradient-to-br from-blue-500 to-blue-600': !way, 'text-gray-600':way}">
+                        One Way</h2>
+                </button>
+                <button @click="way = true">
+                    <h2 class="px-4 rounded-full py-1"
+                        x-bind:class="{'text-white rounded-md font-medium bg-gradient-to-br from-blue-500 to-blue-600': way, 'text-gray-600':!way}">
+                        Two Way</h2>
+                </button>
+            </div>
+            <div class="relative grid grid-cols-2 px-5">
+                <!-- From -->
+
+    <div class="relative z-10 w-full flex justify-end items-end mt-6 px-5">
+
+    </div>
+    <div class="container-reset">
+       
+    </div>
+
+
+
+
+    <footer id="footer" class="add-shadows w-full bg-gray-800">
+        <div class="max-w-7xl mx-auto w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 px-2 py-4 gap-y-10">
+            <!-- Contact -->
+            <ul class="w-full space-y-2">
+                <li class="appearance-none">
+                    <h1 class="font-semibold text-xl pb-1">Contact us</h1>
+                </li>
+                <li class="appearance-none flex items-center"><i class="text-white mr-2"></i>
+                    <h1>Florida Seller of Travel Ref. No.</h1>
+                </li>
+                <li class="appearance-none flex items-center"><i class="text-white mr-2"></i>
+                    <h1>ST15589- CST 2090937-50</h1>
+                </li>
+                <li class="appearance-none flex items-center"><i class="text-white mr-2"></i>
+                    <h1>Washington UBID No. 603189022 Iowa Registered Agency No. 1202</h1>
+                </li>
+                <li class="appearance-none flex items-center">
+                    <a href="ww.countdowntobliss.com/tandc">Terms and Conditions</a>
+                </li>
+            </ul>
+            <!-- Privacy -->
+            <!-- Social -->
+            <ul class="w-full space-y-2">
+                <li></li>
+                <li class="appearance-none flex items-center">
+                    <h1>Facebook @countdowntobliss</h1>
+                </li>
+                <li class="appearance-none flex items-center">
+                    <h1>Instagram @countdowntobliss</h1>
+                </li>
+                <li class="appearance-none flex items-center">
+                    <h1>TikTok @countdowntobliss</h1>
+                </li>
+                <li class="appearance-none flex items-center">
+                    <h1>Email sclarke@countdowntobliss.com</h1>
+                </li>
+
+            </ul>
+        </div>
+        <h1 class="w-full text-center text-sm py-2">Travel Agency Orlando FL | &copy; Countdown to Bliss 2022</h1>
+
+    </footer>
+    <script src="./main.js"></script>
+</body>
+
+</html>
